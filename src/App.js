@@ -10,7 +10,7 @@ import NavBarComp from './components/NavBarComp';
 function App() {
   return (
     <Router>
-    <div className="App">
+    <div className="App w-full h-screen px-10 bg-gray-500">
       <NavBarComp/>
       
           
