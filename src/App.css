@@ -6,3 +6,18 @@
     font-family: Montserrat, sans-serif;
     
   }
+
+  th{
+    height: 3rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.562);
+  }
+
+  td{
+    height: 3rem;
+    font-weight: 500;
+  }
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }

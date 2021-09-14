@@ -2,7 +2,7 @@ import React from 'react'
 
 const CaseAcrossWorldComp = () => {
   return (
-    <div className="w-full flex justify-evenly bg-red-400 items-center text-center">
+    <div className="w-full flex justify-evenly bg-red-400 items-center text-center my-4">
       <div className="w-1/4 h-20 flex justify-center items-center flex-col bg-yellow-300 rounded-lg">
         <p>Total Cases</p>
         <p>226,150,728</p>
