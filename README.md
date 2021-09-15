@@ -1,7 +1,7 @@
 # Covid Status
 
 > Covid Status App built with the ReactJs & Tailwind Css.
-[Live link of Covid Status](http://akhilranaportfolio.herokuapp.com/)
+[Live link of Covid Status](https://kovidstatus.netlify.app/)
 
 ## About the Project
 
