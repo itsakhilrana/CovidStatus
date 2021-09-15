@@ -41,7 +41,27 @@ function App() {
       }
       const { data } = await axios.get(url2, { headers })
       //console.log(data.response)
-      setWorldStats(data.response)
+      let arr = data.response.filter((val) =>{
+        return val.country !== "All" && val.country !== "Asia"
+      })
+
+      arr = arr.filter((val) =>{
+        return val.country !== "Europe" && val.country !== "Africa"
+      })
+
+      arr = arr.filter((val) =>{
+        return val.country !== "North-America" && val.country !== "South-America"
+      })
+
+      arr = arr.filter((val) =>{
+        return val.country !== "Oceania" && val.country !== "Africa"
+      })
+
+
+
+      console.log(arr)
+      
+      setWorldStats(arr)
     } catch (error) {
       console.log(error)
     }
@@ -58,7 +78,7 @@ function App() {
       <globalStore.Provider
         value={{ worldStats: worldStats, casesAcrossWorld: casesAcrossWorld }}
       >
-        <div className="App w-full h-screen px-10 bg-gray-500">
+        <div className="App w-screen md:w-full h-screen bg-gray-300">
           <NavBarComp />
 
           <Switch>

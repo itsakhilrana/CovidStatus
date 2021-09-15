@@ -21,3 +21,13 @@
   tr:nth-child(even) {
     background-color: #dddddd;
   }
+
+  .mTable{
+    height: 480px;
+  }
+
+  @media (min-width: 768px) {
+    .mTable{
+      height: 380px;
+    }
+}
