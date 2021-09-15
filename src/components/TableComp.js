@@ -9,9 +9,10 @@ const TableComp = ({worldStats}) => {
             <th>Total Cases</th>
             <th>New Cases</th>
             <th>Recovered Cases</th>
+            <th>Death Cases</th>
             <th>Active Cases</th>
             <th>Critical Cases</th>
-            <th>Death Cases</th>
+            
             <th>Death / 1m Pop</th>
             <th>Cases / 1m Pop</th>
           </tr>
@@ -23,9 +24,10 @@ const TableComp = ({worldStats}) => {
               <td>{val.cases.total}</td>
               <td className="text-red-500">{val.cases.new}</td>
               <td className="text-green-500">{val.cases.recovered}</td>
+              <td className="text-blue-500">{val.deaths.total}</td>
               <td>{val.cases.active}</td>
               <td>{val.cases.critical}</td>
-              <td>{val.deaths.total}</td>
+              
               <td>{val.deaths['1M_pop']}</td>
               <td>{val.cases['1M_pop']}</td>
             </tr>

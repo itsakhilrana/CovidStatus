@@ -4,7 +4,7 @@ const FilterTabsComp = ({ initFilterState, filterTab, tabChange }) => {
       <div
         className={
           filterTab.newCase
-            ? 'my-1 py-1 px-1 md:px-3 bg-red-500 text-gray-50 rounded-sm text-xs'
+            ? 'my-1 py-1 px-1 md:px-3 bg-gray-800 text-gray-50 rounded-sm text-xs'
             : 'my-1 py-1 px-1 md:px-3 bg-gray-100 text-gray-800 rounded-sm text-xs'
         }
         onClick={() => {
@@ -16,7 +16,7 @@ const FilterTabsComp = ({ initFilterState, filterTab, tabChange }) => {
       <div
         className={
           filterTab.Asia
-            ? 'my-1 py-1 px-3 bg-red-500 text-gray-50 rounded-sm text-xs'
+            ? 'my-1 py-1 px-3 bg-gray-800 text-gray-50 rounded-sm text-xs'
             : 'my-1 py-1 px-3 bg-gray-100 text-gray-800 rounded-sm text-xs'
         }
         onClick={() =>
@@ -28,7 +28,7 @@ const FilterTabsComp = ({ initFilterState, filterTab, tabChange }) => {
       <div
         className={
           filterTab.Africa
-            ? 'my-1 py-1 px-3 bg-red-500 text-gray-50 rounded-sm text-xs'
+            ? 'my-1 py-1 px-3 bg-gray-800 text-gray-50 rounded-sm text-xs'
             : 'my-1 py-1 px-3 bg-gray-100 text-gray-800 rounded-sm text-xs'
         }
         onClick={() =>
@@ -40,7 +40,7 @@ const FilterTabsComp = ({ initFilterState, filterTab, tabChange }) => {
       <div
         className={
           filterTab.Europe
-            ? 'my-1 py-1 px-3 bg-red-500 text-gray-50 rounded-sm text-xs'
+            ? 'my-1 py-1 px-3 bg-gray-800 text-gray-50 rounded-sm text-xs'
             : 'my-1 py-1 px-3 bg-gray-100 text-gray-800 rounded-sm text-xs'
         }
         onClick={() =>
@@ -52,7 +52,7 @@ const FilterTabsComp = ({ initFilterState, filterTab, tabChange }) => {
       <div
         className={
           filterTab.NorthAmerica
-            ? 'my-1 py-1 px-3 bg-red-500 text-gray-50 rounded-sm text-xs'
+            ? 'my-1 py-1 px-3 bg-gray-800 text-gray-50 rounded-sm text-xs'
             : 'my-1 py-1 px-3 bg-gray-100 text-gray-800 rounded-sm text-xs'
         }
         onClick={() =>
@@ -68,7 +68,7 @@ const FilterTabsComp = ({ initFilterState, filterTab, tabChange }) => {
       <div
         className={
           filterTab.SouthAmerica
-            ? 'my-1 py-1 px-3 bg-red-500 text-gray-50 rounded-sm text-xs'
+            ? 'my-1 py-1 px-3 bg-gray-800 text-gray-50 rounded-sm text-xs'
             : 'my-1 py-1 px-3 bg-gray-100 text-gray-800 rounded-sm text-xs'
         }
         onClick={() =>
@@ -84,7 +84,7 @@ const FilterTabsComp = ({ initFilterState, filterTab, tabChange }) => {
       <div
         className={
           filterTab.Oceania
-            ? 'my-1 py-1 px-3 bg-red-500 text-gray-50 rounded-sm text-xs'
+            ? 'my-1 py-1 px-3 bg-gray-800 text-gray-50 rounded-sm text-xs'
             : 'my-1 py-1 px-3 bg-gray-100 text-gray-800 rounded-sm text-xs'
         }
         onClick={() =>
@@ -97,7 +97,7 @@ const FilterTabsComp = ({ initFilterState, filterTab, tabChange }) => {
       <div
         className={
           filterTab.deathPerM
-            ? 'my-1 py-1 px-3 bg-red-500 text-gray-50 rounded-sm text-xs'
+            ? 'my-1 py-1 px-3 bg-gray-800 text-gray-50 rounded-sm text-xs'
             : 'my-1 py-1 px-3 bg-gray-100 text-gray-800 rounded-sm text-xs'
         }
         onClick={() =>
@@ -114,7 +114,7 @@ const FilterTabsComp = ({ initFilterState, filterTab, tabChange }) => {
       <div
         className={
           filterTab.casesPerM
-            ? 'my-1 py-1 px-3 bg-red-500 text-gray-50 rounded-sm text-xs'
+            ? 'my-1 py-1 px-3 bg-gray-800 text-gray-50 rounded-sm text-xs'
             : 'my-1 py-1 px-3 bg-gray-100 text-gray-800 rounded-sm text-xs'
         }
         onClick={() =>

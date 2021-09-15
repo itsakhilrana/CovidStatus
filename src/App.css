@@ -20,7 +20,8 @@
   }
 
   tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: #111827;
+    color: aliceblue;
   }
 
   .mTable{
