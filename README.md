@@ -3,6 +3,8 @@
 > Covid Status App built with the ReactJs & Tailwind Css.
 [Live link of Covid Status](https://kovidstatus.netlify.app/)
 
+![screenshot](https://github.com/itsakhilrana/CovidStatus/blob/master/src/assets/covidStatus.PNG)
+
 ## About the Project
 
 - Implemented the global state of Application using contextApi.
