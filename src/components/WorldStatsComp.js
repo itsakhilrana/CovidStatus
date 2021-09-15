@@ -16,68 +16,63 @@ const WorldStatsComp = () => {
     deathPerM: false,
     casesPerM: false,
   }
-  //const tabsData = JSON.parse(localStorage.getItem('filterTabs'))
+  const tabsData = JSON.parse(localStorage.getItem('filterTabs'))
 
-  const [filterTab, setFilterTabs] = useState(initFilterState)
+  const [filterTab, setFilterTabs] = useState(
+    tabsData ? tabsData : initFilterState
+  )
 
-  //localStorage.setItem('filterTabs', JSON.stringify(filterTab))
+  localStorage.setItem('filterTabs', JSON.stringify(filterTab))
 
   console.log(worldStats)
 
   //sort on the basis of new cases
   //
 
+  worldStats.forEach((element) => {
+    if (element.cases.new === null) {
+      element.cases.new = 0
+    }
+  })
+
+  worldStats.sort((a, b) => parseInt(b.cases.new) - parseInt(a.cases.new))
+
   //According to this array will change
   const filterTabHandler = () => {
-    if (filterTab.newCase) {
-      worldStats.forEach((element) => {
-        if (element.cases.new === null) {
-          element.cases.new = 0
-        }
-      })
-      worldStats.sort((a, b) => parseInt(b.cases.new) - parseInt(a.cases.new))
-    }
-
     if (filterTab.Asia) {
       worldStats = worldStats.filter((val) => {
         return val.continent === 'Asia'
       })
-      worldStats.sort((a, b) => parseInt(b.cases.new) - parseInt(a.cases.new))
     }
 
     if (filterTab.Africa) {
       worldStats = worldStats.filter((val) => {
         return val.continent === 'Africa'
       })
-     worldStats.sort((a, b) => parseInt(b.cases.new) - parseInt(a.cases.new))
     }
 
     if (filterTab.NorthAmerica) {
       worldStats = worldStats.filter((val) => {
         return val.continent === 'North-America'
       })
-      worldStats.sort((a, b) => parseInt(b.cases.new) - parseInt(a.cases.new))
     }
 
     if (filterTab.SouthAmerica) {
       worldStats = worldStats.filter((val) => {
         return val.continent === 'South-America'
       })
-      worldStats.sort((a, b) => parseInt(b.cases.new) - parseInt(a.cases.new))
     }
 
     if (filterTab.Oceania) {
       worldStats = worldStats.filter((val) => {
         return val.continent === 'Oceania'
       })
-      worldStats.sort((a, b) => parseInt(b.cases.new) - parseInt(a.cases.new))
     }
 
     if (filterTab.Europe) {
       worldStats = worldStats.filter((val) => {
         return val.continent === 'Europe'
       })
-     worldStats.sort((a, b) => parseInt(b.cases.new) - parseInt(a.cases.new))
     }
 
     if (filterTab.deathPerM) {
