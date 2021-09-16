@@ -17,19 +17,15 @@ export const stats_API = async (setWorldStats, setcasesAcrossWorld) => {
     setcasesAcrossWorld(casesAcrossWorld_Arr[0])
 
     let worldStats_Arr = data.response.filter((val) => {
-      return val.country !== 'All' && val.country !== 'Asia'
-    })
-
-    worldStats_Arr = worldStats_Arr.filter((val) => {
-      return val.country !== 'Europe' && val.country !== 'Africa'
-    })
-
-    worldStats_Arr = worldStats_Arr.filter((val) => {
-      return val.country !== 'North-America' && val.country !== 'South-America'
-    })
-
-    worldStats_Arr = worldStats_Arr.filter((val) => {
-      return val.country !== 'Oceania' && val.country !== 'Africa'
+      return ![
+        'Europe',
+        'Africa',
+        'Oceania',
+        'South-America',
+        'North-America',
+        'All',
+        'Asia',
+      ].includes(val.country)
     })
 
     setWorldStats(worldStats_Arr)
